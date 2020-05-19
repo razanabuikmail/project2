@@ -16,8 +16,22 @@ var Er =document.getElementById("Eoro").value = (valNum*0.259238);
 
  function displayResult()
         {
-                      document.getElementById("table").insertRow(-1).td.innerHTML = '<td>("dollar").value</td> <td>jo</td> <td>Er</td>'
-          
-
-          
+            document.getElementById("table").insertRow(-1).innerHTML
+             ='<td>("dollar").value</td> <td>jo</td> <td>Er</td>';
         }
+
+ function deleteResult()
+       {
+           document.getElementById("table").removeRow(-1).innerHTML
+             remove.onclick=function(){
+    if(num===0){
+      alert("nothing to delete");
+
+    }else{
+      num--;
+    var cell=table.getElementsByTagName("td");
+    var last=cell[cell.length-1];
+    table.removeChild(last);
+  }
+  } 
+      }        
