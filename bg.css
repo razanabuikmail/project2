@@ -1,49 +1,62 @@
-body{
-    background: url(img.jpg) center;
+.body{
+     background-image: url(Untitled-1.jpg);
+}
+  .des{
+   
+      width: 174px;
+  margin: 30px auto ;
+  border-radius:  8px ;
+  padding: 25px ;
+ 
+   
 }
 
-h1{
+header{
   padding: 15px;
-  background-color: #4a4550;
+  display: table-cell;
+  background-color: #0d654f;
   border-radius: 8px;
-  color:#ffe7ab;
+  color:#f7f6f1;
   font-size:20px;
   float: center;
-  width: 65px;
+  width: 60%;
   text-align: center;
+    font-family: system-ui;
+}
+label{
+  color: #9a031e ;
+  font-family: system-ui;
+
+}
+input{
+  background-image: url(Untitled-1.jpg);
+  border-radius: 5px;
+   color: #9a031e;
+
 }
 
 
 fieldset{
-    width: 45%;
+   background-image: url(Untitled-1.jpg);
+  border-radius: 8px;
   margin: auto;
-  border: 1px solid #000;
+  border: 3px solid #066d54;
   text-align: left;
   font-size: 20px;
   font-family: lato,sans-serif;
 }
-
-input[type=number],[id]{
-    background: #fff;
-  border: 1px solid #000;
-  border-radius: 2px;
-  border-width: 1px;
-  color: #36454b;
-  font-size: 15px;
-  margin: 5px;
-  padding: 12px;
-  display: inline-block;
-}
-
-input[type=button]{
-    width: 80px;
-  height: 43px;
-  font-weight: bold;
-}
-
-input[type=reset]{
-    width: 95px;
-  height: 43px;
-  font-weight: bold;
-}
  
+ table {
+    background-image: url(Untitled-1.jpg);
+  font-family: lato,sans-serif;;
+  border-collapse: collapse;
+   color:  #9a031e;
+  width: 100%;
+  font-size: 14px;
+}
+
+td, th {
+  border: 1px solid #9a031e6b;
+  text-align: left;
+  padding: 8px;
+}

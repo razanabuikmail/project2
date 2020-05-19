@@ -3,37 +3,64 @@
   <link rel="stylesheet" type="text/css" href="bg.css">
     <title>Currency Converter</title>
 </head>
- 
+<body background=" Untitled-2.jpg">
+<center>
+<header>Currency Converter</header>
+</center>
+ <div class="des">
+<form name="converter" >
 
-
-<body>
-
-<h1>Currency Converter</h1>
-<form name="converter">
+<center>
 <fieldset>
 
-<label >Enter Currency: (ILS)  </label > 
-<input type="number" name="num"> 
-<input type="button" value="Convert" onclick="currencyConverter(converter.num.value)">
+<label style="
+text-align: center;">Enter Currency:   </label > <br> 
+<input type="number" name="num" placeholder="(ILS)"> 
+
 <br><br>
 
-<label>(American): </label>
-<input id="dollar"><br><br>
+<label>US: </label>
+<input class="us" id="dollar"><br><br>
 
-<label>(JO): </label> 
-<input id="dinar">
+<label>JOD: </label> 
+<input class="jo" id="dinar" >
 <br><br>
 
+<label>EUR: </label> 
+<input class="eu" id="Eoro">
+<br><br>
+
+<center>
+<input type="button" value="Convert" onclick="currencyConverter(converter.num.value)">  
 <input type="reset" value="Reset">
-<input type="button" name="add" value="add">
-<input type="button" name="Edit" value="Edit">
+<input type="button" name="Add" value="Add" onclick="addToRecorder(converter.us.value +
+                                                                    converter.jo.value +
+                                                                    converter.eu.value  )"> 
 
- 
- 
+ </center>
+
+ <table id="table">
+  <tr>
+    <th>UC</th>
+    <th>JO</th>
+    <th>EUR</th>
+  </tr>
+
+  <!-- i need to add th <td> by js -->
+  <tr>
+    
+  </tr>
+  
+</table>
+
  
 </fieldset>
-</form>
 
+ </center>
+
+ </div>
+</form>
+</div>
 <script src="3.js"></script>
 
 </body>
