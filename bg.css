@@ -1,0 +1,49 @@
+body{
+    background: url(img.jpg) center;
+}
+
+h1{
+  padding: 15px;
+  background-color: #4a4550;
+  border-radius: 8px;
+  color:#ffe7ab;
+  font-size:20px;
+  float: center;
+  width: 65px;
+  text-align: center;
+}
+
+
+fieldset{
+    width: 45%;
+  margin: auto;
+  border: 1px solid #000;
+  text-align: left;
+  font-size: 20px;
+  font-family: lato,sans-serif;
+}
+
+input[type=number],[id]{
+    background: #fff;
+  border: 1px solid #000;
+  border-radius: 2px;
+  border-width: 1px;
+  color: #36454b;
+  font-size: 15px;
+  margin: 5px;
+  padding: 12px;
+  display: inline-block;
+}
+
+input[type=button]{
+    width: 80px;
+  height: 43px;
+  font-weight: bold;
+}
+
+input[type=reset]{
+    width: 95px;
+  height: 43px;
+  font-weight: bold;
+}
+ 
