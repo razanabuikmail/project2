@@ -16,6 +16,8 @@
 <label style="
 text-align: center;">Enter Currency:   </label > <br> 
 <input type="number" name="num" placeholder="(ILS)"> 
+<input type="button" value="Convert" onclick="currencyConverter(converter.num.value)">  
+
 
 <br><br>
 
@@ -31,11 +33,10 @@ text-align: center;">Enter Currency:   </label > <br>
 <br><br>
 
 <center>
-<input type="button" value="Convert" onclick="currencyConverter(converter.num.value)">  
 <input type="reset" value="Reset">
-<input type="button" name="Add" value="Add" onclick="addToRecorder(converter.us.value +
-                                                                    converter.jo.value +
-                                                                    converter.eu.value  )"> 
+<input type="button" name="Add" value="Add" onclick="displayResult()"> 
+<input type="button" name="delete" value="delete" onclick="deleteResult()"> 
+
 
  </center>
 
