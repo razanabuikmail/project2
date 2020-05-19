@@ -1,6 +1,6 @@
 function currencyConverter(valNum){
 if(converter.num.value <= 0)
-window.alert("NO currency to convert");
+alert("NO currency to convert");
 else{
 var us = document.getElementById("dollar").value = (valNum*0.283859);
 var jo =document.getElementById("dinar").value = (valNum*0.201119);
