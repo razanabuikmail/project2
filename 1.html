@@ -1,21 +1,29 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="bg.css">
-    <title>Currency Converter</title>
+    <title>Money Exchange</title>
 </head>
 <body background=" Untitled-2.jpg">
+
 <center>
-<header>Currency Converter</header>
+<header>Currency Converter 💸
+
+ <marquee behavior="alternate" class="mar"> 💸💸💸💸 hi .. How much local money do you have? 💸💸💸💸</marquee>
+
+
+</header>
+
 </center>
  <div class="des">
 <form name="converter" >
 
 <center>
 <fieldset>
+<center>
+<label>Enter Currency:   </label > <br> 
 
-<label style="
-text-align: center;">Enter Currency:   </label > <br> 
 <input type="number" name="num" placeholder="(ILS)"> 
+</center>
 <center>
 <input type="button" value="Convert" onclick="currencyConverter(converter.num.value)">  
 </center>
@@ -30,30 +38,46 @@ text-align: center;">Enter Currency:   </label > <br>
 <br><br>
 
 <label>EUR: </label> 
-<input class="eu" id="Eoro">
+<input class="er" id="yoro">
 <br><br>
 
 <center>
-<input type="button" name="Add" value="Add" onclick="displayResult()">  
+<input type="button" id="add-result"  name="Add"   value="Add"     onclick="displayResult()">  
+<input type="button" id="deletee"    name="delete" value="delete" onclick="deleteResult()"> 
 <input type="reset" value="Reset">
-<input type="button" name="delete" value="delete" onclick="deleteResult()"> 
-
 
  </center>
+ <h7>Recorder</h7>
 
- <table id="table">
-  <tr>
-    <th>UC</th>
-    <th>JO</th>
-    <th>EUR</th>
+<br>
+   
+
+     <ul id="results">
+
+      
+      </ul>
+
+
+
+
+
+
+
+
+
+<!--  <table id="table">
+  <tr id="tr">
+    <th id="th">UC</th>
+    <th id="th">JO</th>
+    <th id="th">EUR</th>
   </tr>
 
-  <!-- i need to add th <td> by js -->
+  i need to add th <td> by js 
   <tr>
     
   </tr>
   
-</table>
+</table> -->
 
  
 </fieldset>
@@ -61,7 +85,7 @@ text-align: center;">Enter Currency:   </label > <br>
  </center>
 
  </div>
-</form>
+ 
 </div>
 <script src="3.js"></script>
 
