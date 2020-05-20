@@ -1,0 +1,83 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bg.css">
+  <title>Money Exchange</title>
+</head>
+<body background=" Untitled-2.jpg">
+
+<center>
+<header> 💵 Money Exchange 💵
+
+ <marquee behavior="alternate" class="mar"> 💸💸💸💸 hi .. How much local money do you have? 💸💸💸💸</marquee>
+
+
+</header>
+
+</center>
+ <div class="des">
+<form name="converter" >
+
+<center>
+<fieldset>
+<center>
+<label>Enter Currency:   </label > <br> 
+
+<input type="number" name="num" placeholder="(ILS)" id="shekl"> 
+</center>
+<center>
+<input type="button" value="Convert" onclick="currencyConverter(converter.num.value)">  
+<input type="reset" value="Reset">
+</center>
+
+<label>US: </label>
+<input disabled={true} class="us" id="dollar" 
+
+><br><br>
+
+<label>JOD: </label> 
+<input disabled= {true} class="jo" id="dinar" >
+<br><br>
+
+<label>EUR: </label> 
+<input disabled= {true} class="er" id="yoro">
+<br><br>
+
+<center>
+<input type="button" id="add-result"  name="Add"   value="Add"     onclick="displayResult()">  
+<input type="button" id="deletee"    name="delete" value="delete" onclick="deleteResult()"> 
+
+
+ </center>
+ <h7>Recorder : </h7>
+
+<br>
+   
+<!-- 
+     <ul id="results">      
+      </ul>
+ -->
+
+ <table id="table">
+
+  <tr id="tr">
+    <th id="th">ILS</th>
+    <th id="th">US</th>
+    <th id="th">JO</th>
+    <th id="th">EUR</th>
+  </tr>
+<!-- 
+  i need wanna add the <td> in js  -->
+  <tr>
+    
+  </tr>
+  
+</table>
+</fieldset>
+ </center>
+ </div>
+</div>
+
+<script src="3.js"></script>
+
+</body>
+</html>
