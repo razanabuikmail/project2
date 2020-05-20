@@ -2,9 +2,11 @@ function currencyConverter(valNum){
 if(converter.num.value <= 0)
 alert("NO 💸 to convert");
 else{
+
 var us = document.getElementById("dollar").value = (valNum*0.283859);
 var jo =document.getElementById("dinar").value = (valNum*0.201119);
 var Er =document.getElementById("yoro").value = (valNum*0.259238); 
+var ils =document.getElementById("shekl").value=(valNum*1);
 }
 }
 var t = document.getElementById('table');
@@ -14,19 +16,21 @@ var td = document.createElement("td");
           //add in table 
        function displayResult()
         { 
-          var done=  dollar.value+dinar.value+yoro.value ;
+          var done=  dollar.value+dinar.value+yoro.value+shekl.value ;
            if(done===""){
            alert("ok but i need 💸 ");
         }else{
           document.getElementById("table").insertRow(-1).innerHTML
-             ='<td>'+dollar.value+'</td>' +
+             = '<td>'+shekl.value+'</td>'+
+               '<td>'+dollar.value+'</td>' +
               '<td>'+dinar.value+'</td>' +
-              '<td>'+yoro.value+'</td>';
+              '<td>'+yoro.value+'</td>'
+              ;
         }}
 
 function deleteResult()
              {
-           var done=  dollar.value+dinar.value+yoro.value ;
+           var done=  dollar.value+dinar.value+yoro.value+shekl.value ;
            if(done===""){
            alert("the recorder is empty 📓 ");
             }else{
