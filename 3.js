@@ -7,53 +7,82 @@ var jo =document.getElementById("dinar").value = (valNum*0.201119);
 var Er =document.getElementById("yoro").value = (valNum*0.259238); 
 }
 }
+var t = document.getElementById('table');
+var th = document.getElementById('th' );
+var td = document.createElement("td");
 
-// var t = document.getElementById('table');
-// var th = document.getElementById('th' );
-// var td = document.createElement("td");
-// td.innerHTML=cell;
+          //add in table 
+       function displayResult()
+        { 
+          var done=  dollar.value+dinar.value+yoro.value ;
+           if(done===""){
+           alert("ok put i need 💸 ");
+        }else{
+          document.getElementById("table").insertRow(-1).innerHTML
+             ='<td>'+dollar.value+'</td>' +
+              '<td>'+dinar.value+'</td>' +
+              '<td>'+yoro.value+'</td>';
+        }}
 
-//  function displayResult()
-//         {
-               
-//             document.getElementById("table").insertRow(-1).innerHTML
-//              ='<td>1 </td> <td>1.0 </td> <td>1.2 </td>';
-//         }
-
-      var add= document.getElementById("add-result");
-      var num=0;
-      add.displayResult=function(){
-      num++;
-    console.log("add result");
-    var input=document.getElementById("input");
-    var done=  dollar.value+dinar.value+yoro.value ;
-    if(done===""){
-      alert("ok put i need 💸 ");
-    }else{
-    var li=document.createElement("li");
-    li.innerHTML=  " US:  "+  dollar.value+ "/  " + "JOD:  "+dinar.value+ "/  " + "EUR: "+yoro.value  ;
-    var ul=document.getElementById("results")
-    ul.appendChild(li);
-    input.value="";
-  }}
+function deleteResult()
+             {
+           var done=  dollar.value+dinar.value+yoro.value ;
+           if(done===""){
+           alert("the recorder is empty 📓 ");
+            }else{
+             document.getElementById("table").deleteRow(1);
+              }}
+    
 
 
-var dele= document.getElementById("deletee");
- var ul=document.getElementById("results")
-    dele.deleteResult()=function(){
-    if(num===0){
-      alert("nothing to remove");
+            //add in ul :
+  //     var add= document.getElementById("add-result");
+  //     var num=0;
+  //     add.displayResult=function(){
+  //     num++;
+  //   console.log("add result");
+  //   var input=document.getElementById("input");
+  //   var done=  dollar.value+dinar.value+yoro.value ;
+  //   if(done===""){
+  //     alert("ok put i need 💸 ");
+  //   }else{
+  //   var li=document.createElement("li");
+  //   li.innerHTML=  " US:  "+  dollar.value+ "/  " + "JOD:  "+dinar.value+ "/  " + "EUR: "+yoro.value  ;
+  //   var ul=document.getElementById("results")
+  //   ul.appendChild(li);
+  //   input.value="";
+  // }}
 
-    }else{
-      num--;
-    var tasks=ul.getElementsByTagName("li");
-    var last=tasks[tasks.length-1];
-    ul.removeChild(last);
-  }
-  } 
+     //  delete from ul 
+
+// var dele= document.getElementById("deletee");
+//  var ul=document.getElementById("results")
+//     dele.deleteResult()=function(){
+//     if(num===0){
+//       alert("nothing to remove");
+
+//     }else{
+//       num--;
+//     var tasks=ul.getElementsByTagName("li");
+//     var last=tasks[tasks.length-1];
+//     ul.removeChild(last);
+//   }
+//   } 
 
   //document.getElementById("results").remove(1);
+ 
+//   var list = document.getElementById("results");
+//   list.removeChild(list.childNodes[0]);
+// }
+
+ // window.emptyList = function () {
+ //  var ul = document.querySelector('.results');
+ //      var listLength = ul.children.length;
+
+ //      for (i = 0; i < listLength; i++) {
+ //        ul.removeChild(ul.childNodes[i]);
+ //      }
+ //    }
    
-  
   
   //      
