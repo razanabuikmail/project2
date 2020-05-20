@@ -16,7 +16,7 @@ var td = document.createElement("td");
         { 
           var done=  dollar.value+dinar.value+yoro.value ;
            if(done===""){
-           alert("ok put i need 💸 ");
+           alert("ok but i need 💸 ");
         }else{
           document.getElementById("table").insertRow(-1).innerHTML
              ='<td>'+dollar.value+'</td>' +

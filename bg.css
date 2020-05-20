@@ -1,9 +1,9 @@
-.body{
-     background-image: url(Untitled-1.jpg);
-}
-  .des{
+
+.des
+{
    
-      width: 174px;
+  width: 229px;
+  display: block;
   margin: 30px auto ;
   border-radius:  8px ;
   padding: 25px ;
@@ -16,64 +16,80 @@
 
  }
 
- h7{
+ h7
+ {
   font-family: cursive;
   color: #9a031e;
   font-size: 13px;
  }
- #results{
+
+/* #results
+ {
   font-family: cursive;
   font-size: 12px;
   color: #9a031e;
- }
+ }*/
 
-header{
+header
+{
   padding: 15px;
   display: table-cell;
-  background-color: #0d654f;
+  background-image: url(Untitled-3.jpg);
   border-radius: 10px;
+  border-color: #f7f6f1;
   color:#f7f6f1;
   font-size:22px;
-  width: 18%;
+  width: 17%;
   text-align: center;
-    font-family: system-ui;
+  font-family:OCR A Std, monospace;
 }
-label{
+
+label
+{
   color: #9a031e ;
   font-family: system-ui;
 
 }
-input{
+
+input:hover 
+{
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ 
+input
+{
+  border-radius: 8px;
   background-image: url(Untitled-1.jpg);
   border-radius: 5px;
    color: #9a031e;
-
 }
-
-
- 
-fieldset {
+fieldset
+ {
     width: min-content;
     background-image: url(Untitled-1.jpg);
     border-radius: 8px;
     margin: auto;
-    border: 4px solid #066d54;
+    border: 4px solid #720218a8;
     text-align: left;
     font-size: 20px;
     font-family: lato,sans-serif;
  }
  
  
- table {
+ table 
+ {
     background-image: url(Untitled-1.jpg);
   font-family: lato,sans-serif;;
   border-collapse: collapse;
    color:  #9a031e;
   width: 100%;
   font-size: 14px;
+
 }
 
-td, th {
+td, th
+ {
+   border-radius: 8px;
   border: 1px solid #9a031e6b;
   text-align: left;
   padding: 8px;
