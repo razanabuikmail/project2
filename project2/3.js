@@ -34,7 +34,7 @@ function deleteResult()
            if(done===""){
            alert("the recorder is empty 📓 ");
             }else{
-             document.getElementById("table").deleteRow(1);
+             document.getElementById("table").deleteRow(-1);
               }}
     
 
